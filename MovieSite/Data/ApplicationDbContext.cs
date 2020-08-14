@@ -4,7 +4,7 @@ using System.Text;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace movie_site.Data
+namespace MovieSite.Data
 {
     public class ApplicationDbContext : IdentityDbContext
     {

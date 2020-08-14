@@ -1,6 +1,6 @@
 using System;
 
-namespace movie_site.Models
+namespace MovieSite.Models
 {
     public class ErrorViewModel
     {

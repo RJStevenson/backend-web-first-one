@@ -5,9 +5,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using movie_site.Models;
+using MovieSite.Models;
 
-namespace movie_site.Controllers
+namespace MovieSite.Controllers
 {
     public class HomeController : Controller
     {

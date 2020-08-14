@@ -8,12 +8,14 @@ using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.EntityFrameworkCore;
-using movie_site.Data;
+using MovieSite.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using DataAccessLibrary.DataAccess.PeopleMovieContext;
+using Microsoft.Extensions.Options;
 
-namespace movie_site
+namespace MovieSite
 {
     public class Startup
     {
@@ -34,6 +36,11 @@ namespace movie_site
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
             services.AddRazorPages();
+            services.AddDbContext<PeopleMovieContext>(options =>
+            {
+                options.UseSqlServer(Configuration.GetConnectionString("DataAcces"));
+
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

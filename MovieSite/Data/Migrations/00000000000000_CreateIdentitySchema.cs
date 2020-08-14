@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace movie_site.Data.Migrations
+namespace MovieSite.Data.Migrations
 {
     public partial class CreateIdentitySchema : Migration
     {
